@@ -1,0 +1,49 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../constants";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={SITE_DESCRIPTION} />
+        <meta name="title" content={SITE_TITLE} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/fontawesome_all.min.css" />
+        <link rel="stylesheet" href="/css/glightbox.min.css" />
+        <link rel="stylesheet" href="/css/swiper_bundle.min.css" />
+        <title>{SITE_TITLE}</title>
+    </head>
+    <body>
+        <slot />
+        <script is:inline src="/js/fontawesome_all.min.js"></script>
+        <script is:inline src="/js/glightbox.min.js"></script>
+        <script is:inline src="/js/imagesloaded.pkgd.min.js"></script>
+        <script is:inline src="/js/isotope.pkgd.min.js"></script>
+        <script is:inline src="/js/swiper_bundle.min.js"></script>
+    </body>
+</html>
+<style is:global>
+    html {
+        font-family: "Roboto", sans-serif;
+        height: 100%;
+        width: 100%;
+        background-color: #f6f6f6;
+    }
+
+    .roboto-slab {
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+    }
+
+    .cust-container {
+        @apply w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px]  mx-auto px-4;
+    }
+</style>

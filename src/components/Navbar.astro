@@ -1,0 +1,33 @@
+---
+const links = [
+    "home",
+    "about",
+    "services",
+    "portfolio",
+    "team",
+    "blog",
+    "contact",
+];
+---
+
+<header id="header-navbar" class="w-full py-10">
+    <div class="cust-container">
+        <div class="flex justify-between items-center">
+            <a href="/" class="text-3xl font-bold">FutureFusion</a>
+            <ol class="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
+                {
+                    links.map((link) => (
+                        <li>
+                            <a href={`/${link}`} class="capitalize">
+                                {link}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ol>
+            <button class="lg:hidden flex items-center">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
