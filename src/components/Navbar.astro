@@ -14,7 +14,7 @@ const links = [
     <div class="cust-container">
         <div class="flex justify-between items-center">
             <a href="/" class="text-3xl font-bold roboto-slab"
-                >Future <span class="text-primary">Fusion</span>
+                >Future<span class="text-primary">Fusion</span>
             </a>
             <ol class="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
                 {
@@ -47,7 +47,7 @@ const links = [
             links.map((link) => (
                 <li>
                     <a
-                        href=""
+                        href={`/${link}`}
                         class="block py-3 pl-8 transition-all duration-200 text-primary hover:bg-secondary hover:text-white capitalize"
                     >
                         {link}
