@@ -10,17 +10,23 @@ const links = [
 ];
 ---
 
-<header id="header-navbar" class="w-full py-10">
+<header
+    id="header-navbar"
+    class="fixed w-full py-10 z-[10] transition-all duration-300"
+>
     <div class="cust-container">
         <div class="flex justify-between items-center">
-            <a href="/" class="text-3xl font-bold roboto-slab"
+            <a href="/" class="text-3xl font-bold roboto-slab text-secondary"
                 >Future<span class="text-primary">Fusion</span>
             </a>
             <ol class="hidden lg:flex lg:gap-x-6 xl:gap-x-8">
                 {
                     links.map((link) => (
                         <li>
-                            <a href={`/${link}`} class="capitalize">
+                            <a
+                                href={`/${link}`}
+                                class="capitalize text-primary"
+                            >
                                 {link}
                             </a>
                         </li>
@@ -28,7 +34,7 @@ const links = [
                 }
             </ol>
             <button id="sidebar-btn" class="lg:hidden flex items-center">
-                <i class="fa-solid fa-bars text-2xl"></i>
+                <i class="fa-solid fa-bars text-2xl text-primary"></i>
             </button>
         </div>
     </div>
@@ -37,11 +43,12 @@ const links = [
     id="sidebar"
     class="fixed -right-[400px] top-0 bottom-0 min-h-screen max-w-[400px] w-full bg-dark z-[12] transition-all duration-500"
 >
-    <div class="py-8 pl-8">
-        <button id="sidebar-close-btn">
-            <i class="fa-solid fa-arrow-right text-primary text-3xl"></i>
-        </button>
-    </div>
+    <button
+        id="sidebar-close-btn"
+        class="py-10 pl-8 transition-all duration-300"
+    >
+        <i class="fa-solid fa-arrow-right text-primary text-3xl"></i>
+    </button>
     <ol>
         {
             links.map((link) => (
@@ -78,4 +85,35 @@ const links = [
         sidebar.classList.remove("right-0");
         sidebar.classList.add("-right-[400px]");
     };
+
+    // reduce navbar padding onscroll
+    const navbar = select("#header-navbar");
+    window.addEventListener("scroll", (e) => {
+        e.preventDefault();
+
+        if (window.scrollY >= 50) {
+            navbar.classList.remove("py-10");
+            navbar.classList.add("py-5", "bg-dark", "shadow");
+
+            sidebarCloseBtn.classList.remove("py-10");
+            sidebarCloseBtn.classList.add("py-5");
+        } else {
+            navbar.classList.remove("py-5", "bg-dark", "shadow");
+            navbar.classList.add("py-10");
+
+            sidebarCloseBtn.classList.remove("py-5");
+            sidebarCloseBtn.classList.add("py-10");
+        }
+    });
+
+    window.addEventListener("load", (e) => {
+        e.preventDefault();
+        if (window.scrollY >= 50) {
+            navbar.classList.remove("py-10");
+            navbar.classList.add("py-5", "bg-dark", "shadow");
+
+            sidebarCloseBtn.classList.remove("py-10");
+            sidebarCloseBtn.classList.add("py-5");
+        }
+    });
 </script>
