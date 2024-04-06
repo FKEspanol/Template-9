@@ -41,7 +41,7 @@ const links = [
 </header>
 <div
     id="sidebar"
-    class="fixed -right-[400px] top-0 bottom-0 min-h-screen max-w-[400px] w-full bg-dark z-[12] transition-all duration-500"
+    class="fixed -right-[400px] top-0 bottom-0 min-h-screen max-w-[400px] w-full bg-info z-[12] transition-all duration-500"
 >
     <button
         id="sidebar-close-btn"
@@ -93,12 +93,12 @@ const links = [
 
         if (window.scrollY >= 50) {
             navbar.classList.remove("py-10");
-            navbar.classList.add("py-5", "bg-dark", "shadow");
+            navbar.classList.add("py-5", "bg-info", "shadow");
 
             sidebarCloseBtn.classList.remove("py-10");
             sidebarCloseBtn.classList.add("py-5");
         } else {
-            navbar.classList.remove("py-5", "bg-dark", "shadow");
+            navbar.classList.remove("py-5", "bg-info", "shadow");
             navbar.classList.add("py-10");
 
             sidebarCloseBtn.classList.remove("py-5");
@@ -110,7 +110,7 @@ const links = [
         e.preventDefault();
         if (window.scrollY >= 50) {
             navbar.classList.remove("py-10");
-            navbar.classList.add("py-5", "bg-dark", "shadow");
+            navbar.classList.add("py-5", "bg-info", "shadow");
 
             sidebarCloseBtn.classList.remove("py-10");
             sidebarCloseBtn.classList.add("py-5");
