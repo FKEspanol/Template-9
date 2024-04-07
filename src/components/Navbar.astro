@@ -23,7 +23,10 @@ const links = [
                 {
                     links.map((link) => (
                         <li>
-                            <a href={`/${link}`} class="capitalize text-white">
+                            <a
+                                href={`/${link}`}
+                                class="capitalize text-white text-sm"
+                            >
                                 {link}
                             </a>
                         </li>
@@ -52,7 +55,7 @@ const links = [
                 <li>
                     <a
                         href={`/${link}`}
-                        class="block py-3 pl-8 transition-all duration-200 text-white hover:bg-secondary capitalize"
+                        class="block py-3 pl-8 transition-all duration-200 text-sm text-white hover:bg-secondary capitalize"
                     >
                         {link}
                     </a>
