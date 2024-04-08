@@ -4,12 +4,14 @@ const { heading, info, textWhite = false } = Astro.props;
 
 <section>
     <h2
-        class={`relative pb-3 mb-3 xl:pb-5 xl:mb-5 text-3xl xl:text-5xl font-bold after:absolute after:block after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] xl:after:h-1 after:bg-primary ${textWhite ? "text-white" : ""}`}
+        class={`relative pb-3 mb-3 xl:pb-5 xl:mb-5 text-3xl xl:text-5xl font-bold after:absolute after:block after:left-0 after:bottom-0 after:w-[50px] after:h-[3px] xl:after:h-1 after:bg-primary ${textWhite ? "text-white" : "text-[#2E3135]"}`}
     >
         {heading}
     </h2>
 
-    <p class={`text-sm md:text-base ${textWhite ? "text-white" : ""}`}>
+    <p
+        class={`text-sm md:text-base ${textWhite ? "text-white" : "text-[#52565E]"}`}
+    >
         {info}
     </p>
 </section>

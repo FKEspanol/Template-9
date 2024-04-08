@@ -19,6 +19,7 @@ export default {
                 success: "#78AA4C",
                 warning: "#F59A14",
                 danger: "#F44336",
+                dim: "#F5F6F7",
             },
         },
     },
