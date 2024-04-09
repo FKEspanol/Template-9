@@ -1,6 +1,8 @@
 ---
 import Section from "../Section.astro";
 import SectionHeader from "../SectionHeader.astro";
+
+import servicesData from "../../data/services.json";
 ---
 
 <Section className="bg-dim">
@@ -8,4 +10,24 @@ import SectionHeader from "../SectionHeader.astro";
         heading="Services"
         info="Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum."
     />
+
+    <ol class="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {
+            servicesData.map((i) => (
+                <li class="group col-span-1 p-10 bg-white rounded-md">
+                    <i
+                        class={`fa-solid ${i.icon} text-info text-4xl mb-7 group-hover:text-primary transition-all duration-400`}
+                    />
+                    <h3 class="text-info text-xl font-semibold w-fit after:w-full after:h-[3px] after:bg-dim after:block after:mt-2 after:group-hover:bg-primary after:transition-all after:duration-400">
+                        {i.title}
+                    </h3>
+                    <p class="text-sm text-info leading-6 mt-5">{i.content}</p>
+                    <a href="#" class="mt-4 text-primary flex items-center">
+                        Learn More{" "}
+                        <i class="fa-solid fa-arrow-right text-sm ml-2" />
+                    </a>
+                </li>
+            ))
+        }
+    </ol>
 </Section>
