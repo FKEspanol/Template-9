@@ -1,0 +1,40 @@
+[
+    {
+        "filter": "design",
+        "image": "design-1.jpg"
+    },
+    {
+        "filter": "development",
+        "image": "dev-1.jpg"
+    },
+    {
+        "filter": "photography",
+        "image": "photo-1.jpg"
+    },
+
+    {
+        "filter": "development",
+        "image": "dev-2.jpg"
+    },
+    {
+        "filter": "photography",
+        "image": "photo-2.jpg"
+    },
+    {
+        "filter": "design",
+        "image": "design-2.jpg"
+    },
+
+    {
+        "filter": "photography",
+        "image": "photo-3.jpg"
+    },
+    {
+        "filter": "design",
+        "image": "design-3.jpg"
+    },
+    {
+        "filter": "development",
+        "image": "dev-3.jpg"
+    }
+]
