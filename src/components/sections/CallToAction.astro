@@ -1,0 +1,24 @@
+---
+import Section from "../Section.astro";
+import Button from "../Button.astro";
+---
+
+<Section
+    className="relative bg-dark bg-opacity-70 bg-cover bg-center bg-fixed before:absolute before:inset-0 before:bg-[url('/images/cta-bg.jpg')] before:opacity-70 before:-z-[1]"
+>
+    <div class="cust-container">
+        <div class="lg:w-[60%] mx-auto text-center">
+            <h2
+                class="text-2xl md:text-3xl font-semibold text-white mb-3 md:mb-6"
+            >
+                Doloremque blanditiis libero
+            </h2>
+            <p class="text-sm md:text-base text-white leading-6 mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque blanditiis libero sit. Ducimus a et nisi voluptatum
+                ratione repellat quisquam iure sapiente.
+            </p>
+            <Button>Call To Action</Button>
+        </div>
+    </div>
+</Section>
