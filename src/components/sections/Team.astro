@@ -1,0 +1,56 @@
+---
+import Section from "../Section.astro";
+import SectionHeader from "../SectionHeader.astro";
+import teamData from "../../data/team.json";
+---
+
+<Section>
+    <SectionHeader
+        heading="Our Team"
+        info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum commodi dolorem vel nihil aspernatur magnam voluptatem quas esse quibusdam."
+    />
+
+    <ol class="mt-14 grid lg:grid-cols-2 gap-7">
+        {
+            teamData.map((i) => (
+                <li class="col-span-1 flex items-center mb-5">
+                    <img
+                        src={`/images/team/${i.image}`}
+                        alt={`Image of ${i.name}`}
+                        class="w-2/6 rounded-full"
+                    />
+                    <div class="pl-7">
+                        <h3 class="lg mb-2 font-semibold">{i.name}</h3>
+                        <small class="text-sm text-gray-500 font-bold block mb-5">
+                            {i.position}
+                        </small>
+                        <p class="text-gray-500 italic mb-3">
+                            {" "}
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quo soluta vero ut maxime illo adipisci quas
+                        </p>
+                        <ol class="flex items-center gap-x-3">
+                            {[
+                                "facebook",
+                                "linkedin",
+                                "instagram",
+                                "twitter",
+                            ].map((i) => (
+                                <li>
+                                    <a
+                                        href={`https://${i}.com`}
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class={`fab fa-${i} text-smoke text-xl`}
+                                        />
+                                    </a>
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                </li>
+            ))
+        }
+    </ol>
+</Section>

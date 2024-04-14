@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Bryce Johnson",
+        "position": "CEO",
+        "quote": "I thrive building close-knit teams that create magic.",
+        "image": "team-1.jpg"
+    },
+    {
+        "name": "Amelia Garcia",
+        "position": "CTO",
+        "quote": "Fueled by coffee and complex algorithms.",
+        "image": "team-2.jpg"
+    },
+    {
+        "name": "Daniel Lee",
+        "position": "Head of Marketing",
+        "quote": "Let's tell our story and make the world listen.",
+        "image": "team-3.jpg"
+    },
+    {
+        "name": "Camila Hernandez",
+        "position": "Software Engineer",
+        "quote": "Coding the future, one line at a time.",
+        "image": "team-4.jpg"
+    }
+]
