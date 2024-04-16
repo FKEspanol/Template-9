@@ -1,0 +1,78 @@
+---
+import Section from "./Section.astro";
+import Button from "./Button.astro";
+---
+
+<Section className="bg-dark">
+    <div class="grid xl:grid-cols-3 gap-y-20 xl:gap-y-0 xl:gap-x-5">
+        <div class="col-span-1">
+            <h2 class="text-white text-2xl mb-5">
+                Future<span class="text-primary">Fusion</span>
+            </h2>
+            <p class="text-smoke mb-8">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repudiandae, eveniet. Earum nobis delectus dolorem voluptatem.
+            </p>
+            <ol class="flex items-center gap-x-5 w-full">
+                {
+                    ["facebook", "linkedin", "instagram", "twitter"].map(
+                        (i) => (
+                            <li>
+                                <a href={`https://${i}.com`} target="_blank">
+                                    <i
+                                        class={`fab fa-${i} text-white text-xl`}
+                                    />
+                                </a>
+                            </li>
+                        )
+                    )
+                }
+            </ol>
+        </div>
+        <div class="col-span-1">
+            <div class="flex">
+                <div class="w-1/2">
+                    <h5 class="text-smoke text-lg mb-7">Support</h5>
+                    <ol class="text-white grid gap-y-5 text-sm font-semibold">
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Downloads</a></li>
+                        <li><a href="">Lorem ipsum</a></li>
+                        <li><a href="">Product Info</a></li>
+                        <li><a href="">Others</a></li>
+                    </ol>
+                </div>
+                <div class="w-1/2">
+                    <h5 class="text-smoke text-lg mb-7">Links</h5>
+                    <ol class="text-white grid gap-y-5 text-sm font-semibold">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Term of service</a></li>
+                        <li><a href="">Marketing</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-1">
+            <p class="flex items-center mb-7 text-smoke">
+                <i class="fa-solid fa-envelope text-white text-xl pr-3"></i> Stay
+                up to date with our latest innovations
+            </p>
+            <form action="" class="w-full md:w-4/6 lg:w-1/2 xl:w-full">
+                <input
+                    type="email"
+                    name="subject"
+                    id="subject"
+                    class="p-2.5 rounded w-full border focus:outline-none focus:border-primary focus:ring-primary focus:ring-1"
+                    placeholder="Your Email"
+                />
+                <Button className="mt-5">Sign Up</Button>
+            </form>
+        </div>
+    </div>
+    <div class="pt-10 mt-16 border-t border-t-smoke text-center">
+        <p class="text-white">&copy;2024 FutureFusion, All rights reserve.</p>
+    </div>
+</Section>
