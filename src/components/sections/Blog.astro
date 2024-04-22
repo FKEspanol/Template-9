@@ -1,0 +1,41 @@
+---
+import Section from "../Section.astro";
+import SectionHeader from "../SectionHeader.astro";
+
+import { getCollection, type CollectionEntry } from "astro:content";
+import { formatDate } from "../../utils";
+
+const blogCollection: CollectionEntry<"blog">[] = (
+    await getCollection("blog")
+).sort((a, b) => b.data.pubdate.valueOf() - a.data.pubdate.valueOf());
+---
+
+<Section className="bg-dim">
+    <SectionHeader
+        heading="Our Blog Posts"
+        info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum excepturi culpa doloremque illum cumque pariatur unde quas nostrum, voluptate reprehenderit nobis reiciendis non deleniti."
+    />
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 mt-20">
+        {
+            blogCollection.map((i) => (
+                <div class="col-span-1 rounded-lg bg-white">
+                    <img src={i.data.img} alt="" class="w-full" />
+
+                    <div class="px-5 py-8">
+                        <h3 class="mb-3 font-bold">{i.data.heading}</h3>
+                        <p class="text-smoke mb-3 text-sm">
+                            {i.data.supporting_text}
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <strong>By: {i.data.author}</strong>{" "}
+                            <small class="text-sm">
+                                {formatDate(i.data.pubdate)}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</Section>

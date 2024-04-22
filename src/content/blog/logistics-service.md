@@ -1,11 +1,11 @@
 ---
-title: 'Logistics'
-sub_heading: 'because they lacked opposable thumbs and the brainpower to build a space program.'
-author: 'Melanie Angeles'
+title: "Logistics"
+heading: "Sunt rem odit accusantium omnis perspiciatis"
+author: "Melanie Angeles"
 pubdate: 2024-01-15
-img: '/images/logistics-service.jpg'
-supporting_text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At libero facere voluptatibus deserunt soluta quod! Impedit laborum ipsum quas neque quisquam tempore error aut dolore.'
-slug: 'logistics-services'
+img: "/images/blog/blog-1.jpg"
+supporting_text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At libero facere voluptatibus deserunt soluta quod! Impedit laborum ipsum quas neque quisquam tempore error aut dolore."
+slug: "logistics-services"
 ---
 
 Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.

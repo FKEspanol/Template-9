@@ -1,11 +1,11 @@
 ---
-title: 'Packaging'
-sub_heading: 'because they lacked opposable thumbs and the brainpower to build a space program.'
-author: 'Gwen Soriano'
+title: "Packaging"
+heading: "Aut eum totam accusantium voluptatem"
+author: "Gwen Soriano"
 pubdate: 2024-02-20
-img: '/images/packaging-service.jpg'
-supporting_text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At libero facere voluptatibus deserunt soluta quod! Impedit laborum ipsum quas neque quisquam tempore error aut dolore.'
-slug: 'packaging-services'
+img: "/images/blog/blog-3.jpg"
+supporting_text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At libero facere voluptatibus deserunt soluta quod! Impedit laborum ipsum quas neque quisquam tempore error aut dolore."
+slug: "packaging-services"
 ---
 
 Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.

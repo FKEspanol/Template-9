@@ -1,11 +1,11 @@
 ---
-title: 'Cargo'
-sub_heading: 'because they lacked opposable thumbs and the brainpower to build a space program.'
-author: 'John Doe'
+title: "Cargo"
+heading: "Blanditiis voluptate odit ex error"
+author: "John Doe"
 pubdate: 2024-02-15
-img: '/images/cargo-service.jpg'
-supporting_text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At libero facere voluptatibus deserunt soluta quod! Impedit laborum ipsum quas neque quisquam tempore error aut dolore.'
-slug: 'cargo-services'
+img: "/images/blog/blog-2.jpg"
+supporting_text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At libero facere voluptatibus deserunt soluta quod! Impedit laborum ipsum quas neque quisquam tempore error aut dolore."
+slug: "cargo-services"
 ---
 
 Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
