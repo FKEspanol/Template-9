@@ -1,0 +1,30 @@
+---
+const { heading, supporting_text, author, pubdate } = Astro.props;
+---
+
+<section id="subHero">
+    <div
+        class="relative w-full h-[50vh] bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat bg-info after:absolute after:inset-0 after:bg-dark after:bg-opacity-70 flex items-center"
+    >
+        <div class="cust-container relative z-[1]">
+            <div class="text-center text-white">
+                <h1
+                    class="text-3xl lg:text-5xl font-bold text-white mb-4 leading-tight"
+                >
+                    {heading}
+                </h1>
+                <p
+                    class="leading-6 lg:w-4/5 lg:mx-auto text-sm lg:text-[16px] text-white mb-8"
+                >
+                    {supporting_text}
+                </p>
+                <div class="text-center">
+                    <strong>By: {author}</strong>{" "}
+                    <small class="text-sm">
+                        {pubdate}
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
